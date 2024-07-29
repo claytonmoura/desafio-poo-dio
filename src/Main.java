@@ -2,7 +2,6 @@ import br.com.dio.desafio.dominio.Bootcamp;
 import br.com.dio.desafio.dominio.Curso;
 import br.com.dio.desafio.dominio.Dev;
 import br.com.dio.desafio.dominio.Mentoria;
-
 import java.time.LocalDate;
 
 public class Main {
@@ -16,6 +15,11 @@ public class Main {
         curso2.setTitulo("curso js");
         curso2.setDescricao("descrição curso js");
         curso2.setCargaHoraria(4);
+
+        Curso curso3 = new Curso(); // novo curso
+        curso3.setTitulo("curso ruby");
+        curso3.setDescricao("descrição curso ruby");
+        curso3.setCargaHoraria(6);
 
         Mentoria mentoria = new Mentoria();
         mentoria.setTitulo("mentoria de java");
@@ -31,6 +35,7 @@ public class Main {
         bootcamp.setDescricao("Descrição Bootcamp Java Developer");
         bootcamp.getConteudos().add(curso1);
         bootcamp.getConteudos().add(curso2);
+        bootcamp.getConteudos().add(curso3);
         bootcamp.getConteudos().add(mentoria);
 
         Dev devCamila = new Dev();
